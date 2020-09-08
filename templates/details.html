@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post List</title>
+    <title>Post Details</title>
 </head>
 <body>
     <h1>Post {{content}}</h1>
 
-    {% for obj in objects %}
-
-    <a href="{% url 'details' details=obj.title %}">{{obj.title}}</a> <br>
-    {{obj.content}}<br><br>
+    {{object.title}} <br>
+    {{object.content}}<br><br>
 
 
-    {% endfor %}
     
 </body>
 </html>
